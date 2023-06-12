@@ -1,5 +1,4 @@
 import re
-
 from django.db.models.functions import Cast, Replace
 from django.forms import FloatField
 from django.utils import timezone
@@ -7,12 +6,11 @@ from pyecharts.charts import Pie, Line, WordCloud, Map
 from pyecharts import options as opts
 from pyecharts.globals import ThemeType, SymbolType
 
-from mainapp import models
 from django_pandas.io import read_frame
 import jieba
+
+from mainapp import models
 from warehouse.models import Scenery, Evaluate, SpiderLog
-from pyecharts import options as opts
-from pyecharts.charts import Map
 
 
 class AllMap():

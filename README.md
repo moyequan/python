@@ -47,17 +47,17 @@ pip install -i https://pypi.douban.com/simple -r requirements.txt
 
 ```shell
 # 创建数据库
-create database hunan_web;
+create database guangxi_web;
  
 # 使用数据库
-use hunan_web;
+use guangxi_web;
 ```
 
 
 
 #### 3.2、设置数据库信息
 
-在 [settings.py](hunan_web/settings.py)文件中修改数据库连接信息
+在 [settings.py](guangxi_web/settings.py)文件中修改数据库连接信息
 
 ```python
 DATABASES = {
@@ -66,7 +66,7 @@ DATABASES = {
         'OPTIONS': {
             'charset': 'utf8mb4',
         },
-        "NAME": "hunan_web",
+        "NAME": "guangxi_web",
         "USER": "用户名",
         "PASSWORD": "密码",
         "HOST": "127.0.0.1",
@@ -83,7 +83,7 @@ sql文件存在了部分数据，可以直接使用。
 
 ```shell
 # 切换数据库, hunan_web可以替换成你要使用的数据库名
-use hunan_web;
+use guangxi_web;
 # 导入数据
 source ./data_bak/hunan_web_2023-05-12.sql
 ```
@@ -99,7 +99,7 @@ source ./data_bak/hunan_web_2023-05-12.sql
 scrapy crawl qunaer
 ```
 
-![image-20230612145034448](/Users/chenzixin/Library/Mobile Documents/com~apple~CloudDocs/Documents/Code/python/scenery_spider_web/README.assets/image-20230612145034448.png)
+![image-20230612145034448](./README.assets/image-20230612145034448.png)
 
 
 
@@ -133,7 +133,7 @@ pip install --upgrade scrapy
 python manage.py runserver
 ```
 
-![image-20230612141826864](/Users/chenzixin/Library/Mobile Documents/com~apple~CloudDocs/Documents/Code/python/scenery_spider_web/README.assets/image-20230612141826864.png)
+![image-20230612141826864](./README.assets/image-20230612141826864.png)
 
 
 

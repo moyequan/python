@@ -10,7 +10,7 @@ import os
 import sys
 import django
 sys.path.append(os.path.dirname(os.path.abspath('.')))
-os.environ['DJANGO_SETTINGS_MODULE'] = 'hunan_web.settings'  # 项目名.settings
+os.environ['DJANGO_SETTINGS_MODULE'] = 'guangxi_web.settings'  # 项目名.settings
 django.setup()
 
 

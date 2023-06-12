@@ -12,7 +12,7 @@ class QunaerSpider(scrapy.Spider):
     name = 'qunaer'
     # allowed_domains = ['travel.qunar.com']
     # 启始
-    start_urls = ['https://travel.qunar.com/p-cs300022-changsha-jingdian']
+    start_urls = ['https://travel.qunar.com/p-cs299812-nanning-jingdian']
     # 记录页面
     page_num = 1
     models.SpiderLog.objects.create()
